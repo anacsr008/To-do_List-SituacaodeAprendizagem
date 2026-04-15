@@ -1,0 +1,99 @@
+:root {
+    --cabeçalho: linear-gradient(
+        to right,
+         rgba(238,82,163,0.52) 0%,
+         rgba(239,23,135,1) 13%,
+         rgba(255,6,135,1) 19%,
+         rgba(248,5,130,1) 49%, 
+         rgba(255,29,146,1) 71%, 
+         rgba(235,116,172,0.75) 95%);
+    --fundo: rgba(255, 248, 252, 1);
+    --letras_body: rgba(255,6,135,1);
+}
+body {
+     font-family: 'Kanchenjunga'; 
+     background-color: var(--fundo); 
+     margin:0; 
+     color:var(--letras_body); 
+    }
+
+header { 
+    background:var(--cabeçalho); 
+    padding: 20px 0; 
+    color: white; 
+}
+
+.header-content { 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 20px; 
+}
+
+.logo h1 { 
+    margin: 0; 
+    font-size: 1.8rem; 
+    text-transform: uppercase; 
+}
+
+nav { 
+    display: flex; 
+    gap: 10px; 
+}
+
+.btn-nav { 
+    text-decoration: none; 
+    background: rgba(255, 255, 255, 0.2); 
+    color: white; 
+    padding: 10px 25px;
+    border-radius: 25px; 
+    font-weight: bold; 
+}
+
+.btn-nav.active { 
+    background: white; 
+    color:#ff2e93 ; 
+}
+.container { 
+    max-width: 1000px; 
+    margin: 30px auto; 
+    padding: 0 10px; 
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+     display: flex; 
+     flex-direction: column; 
+     align-items: center; 
+     justify-content: center; 
+     padding: 15px; 
+     background: linear-gradient(
+        to right, 
+        rgba(255, 199, 236, 0.623) 4%, 
+        rgba(255, 151, 200, 0.94) 26%, 
+        rgb(236, 140, 185) 50%, 
+        rgba(255, 167, 224, 0.97) 65%, 
+        rgba(255, 216, 234, 0.607) 90%);
+}
+
+.footerimage { 
+    width: 100px; 
+    height: 50px; 
+    object-fit: contain; 
+}
+
+.footer-content { 
+    color: white; 
+    font-size: 0.95rem; 
+    text-align: center; 
+}

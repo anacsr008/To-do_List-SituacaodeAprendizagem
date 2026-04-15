@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List - Tarefas</title>
+    <link rel="stylesheet" href="/Styles/index_paginainicial.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>To do List</h1>
+                <p>Organize suas ideias com estilo</p>
+            </div>
+            <nav>
+                <a href="index_paginainicial.html" class="btn-nav active">Tarefa</a>
+                <a href="index_orcamento.html" class="btn-nav">Orçamento</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="stats">
+            <div class="card-stat1 ">
+                <span>Total de Tarefas</span>
+                <br>
+                <strong id="stat-total-tarefas">0</strong>
+            </div>
+            <div class="card-stat2">
+                <span>Horas Totais</span>
+                <br>
+                <strong id="stat-horas-totais">0h</strong>
+            </div>
+            <div class="card-stat3">
+                <span>Concluídas</span>
+                <br>
+                <strong id="stat-concluidas">0</strong>
+            </div>
+        </section>
+
+        <div class="content-grid">
+            <aside class="form-box">
+                <h3> Nova Tarefa</h3>
+                <label>Nome da Tarefa</label>
+                <input type="text" id="task-name" placeholder="ex: Compras no supermecado">
+                
+                <label>Horas Estimadas</label>
+                <input type="number" id="task-hours" placeholder="ex: 1.30">
+                
+                <button onclick="addTask()" class="btn-add">+ Adicionar Tarefa</button>
+            </aside>
+
+            <section class="list-box">
+                <div id="empty-state" class="empty-state">
+                    <p>Nenhuma Tarefa ainda</p>
+                    <span>Adicione sua primeira tarefa</span>
+                </div>
+                <ul id="task-list"></ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="/Images/estrelas-rodapé.png" alt="Ícone" class="footerimage">
+            <p>Feito com 💗 para organizar seus projetos</p>
+            <p class="copyright">&copy; 2026 To do List - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="/Scripts/script.js"></script>
+</body>
+</html>
