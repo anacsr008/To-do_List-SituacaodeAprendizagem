@@ -10,16 +10,83 @@
     <header>
         <div class="header-content">
             <div class="logo">
-                <h1>To do List</h1>
-                <p>Custo do Projeto</p>
-            </div>
+             <img src="/Images/Logo-TODOLIST.png" alt="Logo Principal">
+             <div class="logo-text">
+                 <h1>To do List</h1>
+              <p>Organize suas ideias com estilo</p>
+             </div>
+        </div>
             <nav>
-                <a href="index_paginainicial.html" class="btn-nav">Tarefa</a>
-                <a href="index_orcamento.html" class="btn-nav active">Orçamento</a>
+            <a href="index_paginainicial.html" class="btn-nav">
+              <img src="/Images/tarefas-tranparente.png" alt="logo de tarefas">
+                 Tarefa
+            </a>
+            <a href="index_orcamento.html" class="btn-nav active">
+              <img src="/Images/orçamento-transparente.png" alt="logo de orçamento">
+                Orçamento
+            </a>
             </nav>
         </div>
     </header>
+ <main class="container">
+    <section class="stats">
+        <div class="card-stat-outline">
+            <div class="card-header">
+                <img src="/Images/Total de tarefas.png" alt="Logo total de tarefas">
+                <span>Total de Tarefas</span>
+            </div>
+            <span class="stat-number" id="orc-total-tasks">0</span>
+        </div>
 
+        <div class="card-stat-outline">
+            <div class="card-header">
+                <img src="/Images/Total de horas.png" alt="Logo total de horas">
+                <span>Total de Horas</span>
+            </div>
+            <span class="stat-number" id="orc-total-hours">0h</span>
+        </div>
+
+        <div class="card-stat-outline highlight">
+            <div class="card-header">
+                <img src="/Images/valortotal.png" alt="Logo valor total">
+                <span>Valor Total</span>
+            </div>
+            <span class="stat-number" id="orc-total-value">R$ 0,00</span>
+        </div>
+    </section>
+
+    <div class="orcamento-grid">
+        <div class="orcamento-form">
+            <div class="form-header">
+                <img src="/Images/logo-novatarefa.png" alt="Orçamento">
+                <h3>Orçamento</h3>
+            </div>
+
+            <label>Nível de Urgência para orçamento final:</label>
+            <select id="urgency-level" onchange="calculateBudget()" >
+                <option value="1">Sem Urgência (Preço Normal)</option>
+                <option value="20">Urgência (+20%)</option>
+                <option value="50">Muita Urgência (+50%)</option>
+        </select>
+               <button onclick="calculateBudget()">Verificar</button>
+
+        </div>
+
+        <div class="orcamento-details">
+            <div class="form-header">
+                <img src="/Images/Detalhamento da tarefa.png" alt="Detalhamento">
+                <h3>Detalhes da Tarefa</h3>
+            </div>
+            <div id="budget-details-list">
+                </div>
+        </div>
+    </div>
+
+    <div class="total-bar">
+        <span>Total do projeto:</span>
+        <strong id="final-price">R$ 0,00</strong>
+    </div>
+</main>
 
      <footer>
         <div class="footer-content">
