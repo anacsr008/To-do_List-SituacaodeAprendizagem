@@ -385,7 +385,7 @@ footer {
 
     .logo {
         margin-left: 0;
-        justify-content: center;
+        gap:5px;
     }
 
     .content-grid {
@@ -424,6 +424,7 @@ footer {
     }
 
     .stats {
+    width: 100px;
     display: flex; 
     flex-direction: row; 
     justify-content: space-between; 
@@ -437,15 +438,24 @@ footer {
     }
 
     .card-stat1, .card-stat2, .card-stat3 {
+      
         margin-top: 0;
         width: auto;
     }
 
     .form-box {
-        padding: 20px; 
+        padding: 15px; 
+        padding-left: 10px;
+        padding-right: 20px;
     }
 
     .list-box {
         padding: 30px 15px;
     }
+
+    
+    .inputTask {
+        width: 95%; 
+    }
+
 }
